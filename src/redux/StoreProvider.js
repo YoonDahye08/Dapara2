@@ -1,8 +1,7 @@
 'use client'
+import { store } from './stroe'
+import { Provider } from 'react-redux'
 
-import { Provider } from "react-redux"
-import { store } from "./stroe"
-
-export function StoreProvider({children}) {
-  return <Provider store = {store} > {children} </Provider>
+export function StoreProvider({ children }) {
+  return <Provider store={store}>{children}</Provider>
 }

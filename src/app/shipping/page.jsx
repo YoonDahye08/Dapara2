@@ -33,7 +33,6 @@ export default function ShippingAddressPage() {
 
     router.push('/payment')
   }
-
   return (
     <div>
       <CheckoutWizard activeStep={1} />
@@ -64,8 +63,8 @@ export default function ShippingAddressPage() {
             {...register('address', {
               required: 'Please enter address',
               minLength: {
-                value: 5,
-                message: 'Address is more than 5 chars',
+                value: 3,
+                message: 'Address is more than 2 chars',
               },
             })}
           />
